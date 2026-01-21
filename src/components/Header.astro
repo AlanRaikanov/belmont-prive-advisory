@@ -51,3 +51,22 @@
 
   </div>
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.getElementById('mobile-menu');
+    if (!menu) return;
+
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.removeAttribute('open');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target)) {
+        menu.removeAttribute('open');
+      }
+    });
+  });
+</script>
