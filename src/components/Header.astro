@@ -27,24 +27,26 @@
     </nav>
 
     <!-- Mobile меню (details/summary, без JS) -->
-    <details class="md:hidden mt-3">
+    <details id="mobile-menu" class="md:hidden relative mt-3">
       <summary
-        class="list-none cursor-pointer select-none text-zinc-400 hover:text-zinc-100 text-xl leading-none"
+        class="list-none cursor-pointer select-none text-zinc-400 hover:text-zinc-100 text-xl"
         aria-label="Открыть меню"
       >
-        ≡
+        ☰
       </summary>
 
-      <nav class="mt-4 space-y-2 text-xs uppercase tracking-wide text-zinc-400">
-        <a href="#about" class="block hover:text-zinc-100">О компании</a>
-        <a href="#approach" class="block hover:text-zinc-100">Подход</a>
-        <a href="#clients" class="block hover:text-zinc-100">Кому полезны</a>
-        <a href="#responsibility" class="block hover:text-zinc-100">Область ответственности</a>
-        <a href="#foreign" class="block hover:text-zinc-100">Для иностранных клиентов</a>
-        <a href="#uae" class="block hover:text-zinc-100">Казахстан — ОАЭ</a>
-        <a href="#contacts" class="block hover:text-zinc-100">Контакты</a>
-        <a href="#contact" class="block hover:text-zinc-100">Связаться</a>
-      </nav>
+      <div class="absolute left-0 right-0 mt-3 bg-zinc-950/95 backdrop-blur border border-zinc-800 rounded-md p-4">
+        <nav class="space-y-2 text-xs uppercase tracking-wide text-zinc-400">
+          <a href="#about" class="block hover:text-zinc-100">О компании</a>
+          <a href="#approach" class="block hover:text-zinc-100">Подход</a>
+          <a href="#clients" class="block hover:text-zinc-100">Кому полезны</a>
+          <a href="#responsibility" class="block hover:text-zinc-100">Область ответственности</a>
+          <a href="#foreign" class="block hover:text-zinc-100">Для иностранных клиентов</a>
+          <a href="#uae" class="block hover:text-zinc-100">Казахстан — ОАЭ</a>
+          <a href="#contacts" class="block hover:text-zinc-100">Контакты</a>
+          <a href="#contact" class="block hover:text-zinc-100">Связаться</a>
+        </nav>
+      </div>
     </details>
 
   </div>
